@@ -134,7 +134,7 @@ for hood in user_hoods:
 df_hoods.drop(['Region', 'State', 'City', 'Metro', 'County',
               'latitude', 'longitude'], axis=0, inplace=True)
 
-df_hoods.index = [datetime.strptime(date, '%m-%d-%Y')
+df_hoods.index = [datetime.strptime(date, '%Y-%m-%d')
                   for date in df_hoods.index]
 df_hoods = df_hoods.astype(float).round(2)
 df_hoods.index = [timestamp.date() for timestamp in df_hoods.index]
