@@ -116,9 +116,9 @@ st.metric("Average ZHVI across all neighborhoods", avg_zhvi)
 if st.checkbox("Show data"):
     st.write(df_filtered[['Region', 'City', 'County', 'ZHVI']])
 
-st.header("Typical Home Prices over Time")
+st.header("Time Series (2000-2023)")
 
-user_hoods = st.multiselect('Pick neighborhood(s)',
+user_hoods = st.multiselect('Select a neighborhood(s)',
                             df_filtered['Region'].unique())
 
 df_hoods = pd.DataFrame(index=list(df_original.columns))
