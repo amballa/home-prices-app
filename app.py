@@ -5,12 +5,12 @@ import pydeck as pdk
 import plotly.express as px
 from datetime import datetime
 
-data_filepath = 'zillow_zhvi_neighborhood.csv'
+data_filepath = 'zillow_zhvi_neighborhood_Jan23.csv'
 
-st.title('Housing Prices in America')
+st.title('US Home Prices Visualizations')
 st.markdown(
     'Explore home prices in neighborhoods across the United States '
-    'based on data from Zillow'
+    'using real, up-to-date data from Zillow'
 )
 st.caption(
     '*Zillow Home Value Index (ZHVI): A smoothed, seasonally-adjusted measure of the typical home value in USD*')
@@ -38,7 +38,7 @@ user_metro = st.selectbox("Select a metro", sorted(
     df[df['State'] == user_state]['Metro'].unique()))
 
 
-dates = [datetime.strptime(date, '%m-%d-%Y')
+dates = [datetime.strptime(date, '%Y-%m-%d')
          for date in df.columns[5:-2]]
 
 cols = []
