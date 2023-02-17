@@ -10,7 +10,7 @@ data_filepath = 'zillow_zhvi_neighborhood_Jan23.csv'
 st.title('US Home Prices Visualizations')
 st.markdown(
     'Explore home prices in neighborhoods across the United States '
-    'based on real, up-to-date data from Zillow'
+    'using real, up-to-date data from Zillow'
 )
 st.caption(
     '*Zillow Home Value Index (ZHVI): A smoothed, seasonally-adjusted measure of the typical home value in USD*')
