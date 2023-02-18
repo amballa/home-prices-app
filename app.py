@@ -7,13 +7,14 @@ from datetime import datetime
 
 data_filepath = 'zillow_zhvi_neighborhood_Jan23.csv'
 
-st.title('US Home Prices Visualizations')
-st.markdown(
-    'Explore home prices in neighborhoods across the United States '
-    'using real, up-to-date data from Zillow'
-)
+st.title('US Home Price Visualizations')
 
 st.caption('*by Abdel Balla*')
+
+st.markdown(
+    'Explore and compare home prices in neighborhoods across the United States '
+    'using real, up-to-date information from Zillow'
+)
 
 st.markdown(
     'Zillow Home Value Index (ZHVI): A smoothed, seasonally-adjusted measure of the typical home value in USD')
